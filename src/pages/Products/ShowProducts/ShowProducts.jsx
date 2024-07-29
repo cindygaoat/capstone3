@@ -6,7 +6,6 @@ const ShowProducts = () => {
 
     const [products, setProducts] = useState([]);
 
-
     useEffect(() => {
 
         fetch('https://capstone2-yk7b.onrender.com/b6/products/active', {
