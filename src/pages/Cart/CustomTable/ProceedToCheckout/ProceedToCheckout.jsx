@@ -7,7 +7,7 @@ const ProceedToCheckout = () => {
   const navigate = useNavigate();
 
   const handleProceedToCheckout = async () => {
-    await fetch('http://localhost:4006/b6/cart/get-cart', {
+    await fetch('https://capstone2-yk7b.onrender.com/b6/cart/get-cart', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ const ProceedToCheckout = () => {
   const createOrder = async (data) => {
     console.log("Creating order with data:", data);
 
-    await fetch('http://localhost:4006/b6/orders/checkout', {
+    await fetch('https://capstone2-yk7b.onrender.com/b6/orders/checkout', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
